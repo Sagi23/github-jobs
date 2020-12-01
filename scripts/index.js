@@ -42,7 +42,7 @@ toggleBtn.addEventListener("click", () => {
 
 const getJobs = async (description, location, full_time, page) => {
   const res = await axios.get(
-    `https://jobs.github.com/positions.json?description=${description}&page=${page}&location=${location}&full_time=${full_time}&markdown=true`
+    `https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=${description}&page=${page}&location=${location}&full_time=${full_time}&markdown=true`
   );
   let s = res.data;
   if (s.length !== 0) {
