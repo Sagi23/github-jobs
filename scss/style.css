@@ -261,6 +261,10 @@ form .btn:hover {
   margin: 0 auto;
 }
 
+.loading {
+  display: none;
+}
+
 .error-msg-1 {
   display: none;
 }

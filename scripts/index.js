@@ -11,6 +11,7 @@ let inputs = document.querySelectorAll("input");
 const err = document.querySelector(".error");
 const loadDiv = document.querySelector(".load");
 let loadMore = document.createElement("button");
+const loading = document.querySelector(".loading");
 let page = 1;
 
 const setClass = (a, b, c, d, e, f) => {
@@ -41,9 +42,11 @@ toggleBtn.addEventListener("click", () => {
 });
 
 const getJobs = async (description, location, full_time, page) => {
+  loading.style.display = "block";
   const res = await axios.get(
     `https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=${description}&page=${page}&location=${location}&full_time=${full_time}&markdown=true`
   );
+  loading.style.display = "none";
   let s = res.data;
   if (s.length !== 0) {
     for (r of s) {
