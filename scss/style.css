@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap");
+:root {
+  font-size: 16px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #f4f6f8;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #5964e0;
+  padding: 4em 0;
+  background-image: url("/assets/desktop/bg-pattern-header.svg");
+  background-repeat: no-repeat;
+  background-size: 110%;
+  border-bottom-left-radius: 6em;
+}
+
+.header-bg {
+  width: 80%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-bg .right {
+  -ms-grid-column-align: right;
+      justify-self: right;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.header-bg .right #toggle:hover {
+  cursor: pointer;
+}
+
+form {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+  margin-top: -2em;
+  border-radius: 1.5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0.6fr 0.3fr 0.3fr;
+      grid-template-columns: 1fr 0.6fr 0.3fr 0.3fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+}
+
+form .left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.1fr 0.9fr;
+      grid-template-columns: 0.1fr 0.9fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+form .left input {
+  background-color: transparent !important;
+  font-size: 1.2rem;
+  width: 100%;
+  border: none;
+  padding: 1em 0;
+}
+
+form .left input:active {
+  background-color: transparent !important;
+}
+
+form .middle {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.1fr 0.9fr;
+      grid-template-columns: 0.1fr 0.9fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+form .middle input {
+  background-color: transparent !important;
+  font-size: 1.2rem;
+  width: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  border: none;
+  padding: 1em 0;
+}
+
+form .middle input:active {
+  background-color: transparent !important;
+}
+
+form .right {
+  font-size: 1.1rem;
+}
+
+form .btn {
+  background-color: #5964e0;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  color: white;
+  font-size: 1.2rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+form .btn:hover {
+  background-color: #939bf4;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4] !important;
+      grid-template-columns: repeat(4, 1fr) !important;
+  width: 80%;
+  margin: 5em auto;
+  gap: 5em 2em;
+}
+
+.card {
+  background-color: white;
+  padding: 0 2em;
+  border-radius: 0.5em;
+  display: -ms-grid;
+  display: grid;
+  width: 80%;
+}
+
+.card .company-logo {
+  width: 50px;
+  height: 50px;
+  margin-top: -2em;
+  margin-left: 1.5em;
+  background-color: #939bf4;
+  padding: 0.5em;
+  border-radius: 1em;
+}
+
+.card .secondery {
+  color: rgba(0, 0, 0, 0.548);
+  overflow-wrap: anywhere;
+}
+
+.card .title {
+  font-size: 1.3rem;
+  line-height: 1.3;
+  color: black;
+  text-decoration: none;
+}
+
+.card .title:hover {
+  color: #6e8098;
+}
+
+.card .location {
+  color: #5964e0;
+}
+
+.card2 {
+  background-color: #121721;
+  padding: 0 2em;
+  border-radius: 0.5em;
+  display: -ms-grid;
+  display: grid;
+  width: 80%;
+}
+
+.card2 .company-logo {
+  width: 50px;
+  height: 50px;
+  margin-top: -2em;
+  margin-left: 1.5em;
+  background-color: #939bf4;
+  padding: 0.5em;
+  border-radius: 1em;
+}
+
+.card2 .secondery {
+  color: rgba(255, 255, 255, 0.548);
+  overflow-wrap: anywhere;
+}
+
+.card2 .title {
+  font-size: 1.3rem;
+  line-height: 1.3;
+  color: white;
+  text-decoration: none;
+}
+
+.card2 .title:hover {
+  color: #6e8098;
+}
+
+.card2 .location {
+  color: #5964e0;
+}
+
+.load {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.load .btn {
+  background-color: #5964e0;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  color: white;
+  font-size: 1.2rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.load .btn:hover {
+  background-color: #939bf4;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.error {
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.error-msg-1 {
+  display: none;
+}
+
+.error-msg-2 {
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  .cards {
+    -ms-grid-columns: (1fr)[3] !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+  }
+  form {
+    -ms-grid-columns: 1fr 0.6fr 0.4fr 0.3fr;
+        grid-template-columns: 1fr 0.6fr 0.4fr 0.3fr;
+  }
+  form .left input {
+    font-size: 1rem;
+  }
+  form .middle input {
+    font-size: 1rem;
+  }
+  form .right {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cards {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+  }
+  form {
+    width: 90%;
+    -ms-grid-columns: 1fr 0.6fr 0.5fr 0.3fr;
+        grid-template-columns: 1fr 0.6fr 0.5fr 0.3fr;
+  }
+  form .left input {
+    font-size: 0.8rem;
+  }
+  form .middle input {
+    font-size: 0.8rem;
+  }
+  form .right {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    background-image: url("/assets/desktop/bg-pattern-header.svg");
+    background-repeat: no-repeat;
+    background-size: 250%;
+  }
+  .cards {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+  form {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+    width: 73%;
+  }
+  form .left {
+    width: 100%;
+    border: none;
+  }
+  form .left input {
+    font-size: 1rem;
+    width: 100%;
+  }
+  form .middle {
+    border: none;
+    width: 100%;
+  }
+  form .middle input {
+    font-size: 1rem;
+  }
+  form .right {
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

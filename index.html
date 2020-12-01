@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Jobs</title>
+    <link rel="stylesheet" href="/scss/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-bg">
+        <div class="left">
+          <img src="/assets/desktop/logo.svg" alt="logo" />
+        </div>
+        <div class="right">
+          <img src="/assets/desktop/icon-sun.svg" alt="sun" />
+          <img src="/assets/desktop/toggle.svg" alt="toggle" id="toggle" />
+          <img src="/assets/desktop/icon-moon.svg" alt="moon" />
+        </div>
+      </div>
+    </header>
+    <form>
+      <div class="left">
+        <img src="/assets/desktop/icon-search.svg" alt="search" />
+        <input
+          type="text"
+          id="title"
+          placeholder="Filter by title company experties..."
+        />
+      </div>
+      <div class="middle">
+        <img src="/assets/desktop/icon-location.svg" alt="location" />
+        <label for="location"></label>
+        <input type="text" id="location" placeholder="Filter by location" p />
+      </div>
+      <div class="right">
+        <input type="checkbox" name="full-time" id="full-time" />
+        <label for="full-time">Full Time Only</label>
+      </div>
+      <button class="btn" type="submit">Search</button>
+    </form>
+    <div class="cards"></div>
+    <div class="error">
+      <p class="error-msg-1">Sorry no jobs were found please try again later</p>
+      <p class="error-msg-2">No more jobs were found please try again later</p>
+    </div>
+    <div class="load"></div>
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>
